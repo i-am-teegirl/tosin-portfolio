@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       EDIT ME: SEO + social sharing
+       Replace "Your Name" and the description everywhere below.
+       After your first Netlify deploy, replace
+       https://your-site.netlify.app with your real site address.
+       ============================================================ -->
+  <title>Your Name | Designer &amp; Developer</title>
+  <meta name="description" content="Your Name builds thoughtful, accessible things for the web. See my projects, experience, and how to get in touch.">
+  <meta name="author" content="Your Name">
+  <link rel="canonical" href="https://your-site.netlify.app/">
+
+  <!-- Open Graph (Facebook, LinkedIn, Slack, iMessage, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Name | Designer &amp; Developer">
+  <meta property="og:description" content="Your Name builds thoughtful, accessible things for the web.">
+  <meta property="og:url" content="https://your-site.netlify.app/">
+  <meta property="og:image" content="https://your-site.netlify.app/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Your Name, personal website">
+  <meta property="og:site_name" content="Your Name">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Name | Designer &amp; Developer">
+  <meta name="twitter:description" content="Your Name builds thoughtful, accessible things for the web.">
+  <meta name="twitter:image" content="https://your-site.netlify.app/images/og-image.png">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Applies a saved light/dark choice before the page paints, so there is no flash. -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <!-- EDIT ME: your initials or short name -->
+      <a class="nav-logo" href="#top" aria-label="Your Name, back to top">YN</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ======================== HERO ======================== -->
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <!-- EDIT ME: your name -->
+        <h1 id="hero-title">Your Name</h1>
+        <!-- EDIT ME: your one-line tagline -->
+        <p class="tagline">Designer and developer making calm, useful things for the web.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <!-- SWAP IMAGE: replace images/profile.svg with your photo
+             (e.g. images/profile.jpg, square, at least 800x800px)
+             and update src and alt below. -->
+        <img src="images/profile.svg" alt="Portrait of Your Name" width="480" height="480">
+      </figure>
+    </section>
+
+    <!-- ======================== ABOUT ======================== -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 class="section-title reveal" id="about-title">About</h2>
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <!-- EDIT ME: your longer bio, 2-3 sentences -->
+          <p>I'm a placeholder bio. Replace this with two or three sentences about who you are, what you care about, and the kind of work you love doing.</p>
+          <p>Mention where you're based, what you're focused on right now, or what you're looking for next, such as new roles, freelance projects, or collaborators.</p>
+        </div>
+        <div class="about-skills reveal">
+          <h3>What I do</h3>
+          <!-- EDIT ME: your skills. Add or remove <li> lines as needed. -->
+          <ul class="skill-list">
+            <li>Web design</li>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Accessibility</li>
+            <li>UX research</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROJECTS ======================== -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title reveal" id="projects-title">Projects</h2>
+      <!-- EDIT ME: one <li class="card"> per project. Copy a whole card to add another. -->
+      <ul class="project-grid">
+        <li class="card reveal">
+          <!-- SWAP IMAGE: images/project-1.svg → your screenshot (1200x750px works well) -->
+          <img src="images/project-1.svg" alt="Screenshot of Project One" width="1200" height="750" loading="lazy">
+          <div class="card-body">
+            <h3><a href="https://example.com" target="_blank" rel="noopener noreferrer">Project One<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
+            <p>A one-line description of what this project does and why it matters.</p>
+            <ul class="tags" aria-label="Tools used">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+          </div>
+        </li>
+        <li class="card reveal">
+          <!-- SWAP IMAGE: images/project-2.svg → your screenshot -->
+          <img src="images/project-2.svg" alt="Screenshot of Project Two" width="1200" height="750" loading="lazy">
+          <div class="card-body">
+            <h3><a href="https://example.com" target="_blank" rel="noopener noreferrer">Project Two<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
+            <p>A one-line description of what this project does and why it matters.</p>
+            <ul class="tags" aria-label="Tools used">
+              <li>JavaScript</li><li>API</li>
+            </ul>
+          </div>
+        </li>
+        <li class="card reveal">
+          <!-- SWAP IMAGE: images/project-3.svg → your screenshot -->
+          <img src="images/project-3.svg" alt="Screenshot of Project Three" width="1200" height="750" loading="lazy">
+          <div class="card-body">
+            <h3><a href="https://example.com" target="_blank" rel="noopener noreferrer">Project Three<span class="visually-hidden"> (opens in a new tab)</span></a></h3>
+            <p>A one-line description of what this project does and why it matters.</p>
+            <ul class="tags" aria-label="Tools used">
+              <li>Design</li><li>Research</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ======================== EXPERIENCE ======================== -->
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title reveal" id="experience-title">Experience &amp; Education</h2>
+      <!-- EDIT ME: one <li> per job, school, or highlight. Newest first. -->
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <p class="timeline-date">2024 – Present</p>
+          <div>
+            <h3>Job Title · Company Name</h3>
+            <p>One or two lines on what you did and a result you're proud of.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <p class="timeline-date">2021 – 2024</p>
+          <div>
+            <h3>Job Title · Company Name</h3>
+            <p>One or two lines on what you did and a result you're proud of.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <p class="timeline-date">2017 – 2021</p>
+          <div>
+            <h3>Degree or Course · School Name</h3>
+            <p>Honours, a focus area, or a project worth mentioning.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======================== CONTACT ======================== -->
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title reveal" id="contact-title">Let's talk</h2>
+      <p class="contact-lead reveal">I'm always happy to hear about new projects, roles, or just to say hello.</p>
+      <!-- EDIT ME: your email address (change it in BOTH the href and the text) -->
+      <a class="contact-email reveal" href="mailto:hello@example.com">hello@example.com</a>
+      <!-- EDIT ME: your profile links. Delete any you don't use. -->
+      <ul class="social-list reveal">
+        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><a href="https://github.com/your-handle" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer">Résumé<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- EDIT ME: your name -->
+      <p>&copy; <span id="year">2026</span> Your Name</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
