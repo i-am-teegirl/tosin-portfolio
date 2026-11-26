@@ -422,3 +422,7 @@ html:not(.js) .nav { flex-wrap: wrap; height: auto; padding-block: .75rem; gap: 
   .js .reveal { opacity: 1; transform: none; transition: none; }
   .btn:hover, .card:hover, .card:focus-within { transform: none; }
 }
+
+/* Extra heading inside the About skills column */
+.about-sub { margin-top: 1.5rem; }
+.about-skills p { color: var(--muted); }
