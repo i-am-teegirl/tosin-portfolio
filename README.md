@@ -109,32 +109,32 @@ git push
 
 ---
 
-## 3. Put it online with Netlify
+## 3. Put it online with Vercel
 
 You only do this once. After that, every `git push` updates the live site
 automatically.
 
-1. Go to https://app.netlify.com and sign up or log in (choosing
-   **Sign up with GitHub** is easiest).
-2. Click **Add new project** → **Import an existing project**.
-3. Choose **GitHub** and allow Netlify to access your account if asked.
-4. Pick the **tosin-portfolio** repository.
-5. On the settings screen:
-   - **Branch to deploy:** `main`
-   - **Build command:** leave it **empty**
-   - **Publish directory:** leave it **empty** (or type `.`). This means
-     "the project root", where `index.html` lives.
-6. Click **Deploy**. After a few seconds Netlify gives you a web address
-   like `https://something-random.netlify.app`.
-7. Optional: in **Project configuration** → **Change project name**, pick a
-   nicer name, such as `tosin.netlify.app`.
+1. Go to https://vercel.com. Click **Sign Up** (or **Log In**) and choose
+   **Continue with GitHub**.
+2. Click **Add New…** → **Project**.
+3. Find **tosin-portfolio** in the list and click **Import**. If you don't
+   see it, click **Adjust GitHub App Permissions** and give Vercel access
+   to the repository.
+4. On the settings screen:
+   - **Framework Preset:** `Other`
+   - **Root Directory:** leave it as `./` (the project root, where
+     `index.html` lives)
+   - **Build and Output Settings:** don't change anything. There is no
+     build command.
+5. Click **Deploy**. After a few seconds Vercel gives you a web address
+   like `https://tosin-portfolio.vercel.app`.
 
 From now on, each `git push` to `main` redeploys the site within a minute.
 
 ### After your first deploy: fix the sharing links
 
-Open `index.html` and find every `https://your-site.netlify.app` near the
-top (in the `<head>` section). Replace them with your real Netlify address.
+Open `index.html` and find every `https://your-site.vercel.app` near the
+top (in the `<head>` section). Replace them with your real Vercel address.
 This makes link previews on LinkedIn, iMessage, Slack, etc. show the right
 title and image. Then commit and push again.
 
